@@ -100,7 +100,9 @@ export const profile = {
     },
   ] satisfies Project[],
 
-  // Contacts. Empty for now, so the section shows a quiet placeholder.
-  // Example: { label: "Telegram", href: "https://t.me/username", handle: "@username" }
-  links: [] as Link[],
+  // Contacts. Example: { label: "Telegram", href: "https://t.me/username", handle: "@username" }
+  links: [
+    { label: "Email", href: "mailto:dmitriidevv@proton.me", handle: "dmitriidevv@proton.me" },
+    { label: "Fiverr", href: "https://www.fiverr.com/dfurmaniuk/", handle: "fiverr.com/dfurmaniuk" },
+  ] as Link[],
 };

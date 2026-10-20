@@ -173,7 +173,11 @@ export function Contact() {
           <ul className="contact-links">
             {links.map((l) => (
               <li key={l.href}>
-                <a className="contact-link" href={l.href} target="_blank" rel="noreferrer">
+                <a
+                  className="contact-link"
+                  href={l.href}
+                  {...(l.href.startsWith("mailto:") ? {} : { target: "_blank", rel: "noreferrer" })}
+                >
                   <span className="contact-label">{l.label}</span>
                   <span className="contact-handle">{l.handle ?? l.href.replace(/^https?:\/\//, "")}</span>
                   <span className="contact-arrow" aria-hidden="true">
