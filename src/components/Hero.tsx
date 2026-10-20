@@ -35,7 +35,7 @@ export function Hero() {
         </div>
       </div>
 
-      <figure className="code-card reveal" style={{ "--d": "320ms" } as React.CSSProperties} aria-label="A short summary of me, written as code">
+      <figure className="code-card reveal" style={{ "--d": "320ms" } as React.CSSProperties} aria-label="A short summary of me, as a JSON file">
         <div className="code-bar">
           <span className="dots" aria-hidden="true">
             <i />
@@ -46,28 +46,29 @@ export function Hero() {
         </div>
         <pre className="code">
           <code>
-            <Line n={1}>
-              <K>const</K> <V>dmitrii</V> = {"{"}
-            </Line>
+            <Line n={1}>{"{"}</Line>
             <Line n={2}>
-              {"  "}<P>role</P>: <S>"{profile.role}"</S>,
+              {"  "}<P>"name"</P>: <S>"{profile.name}"</S>,
             </Line>
             <Line n={3}>
-              {"  "}<P>experience</P>: <N>{profile.years}</N>, <C>// years, roughly</C>
+              {"  "}<P>"role"</P>: <S>"{profile.role}"</S>,
             </Line>
             <Line n={4}>
-              {"  "}<P>speaks</P>: [<S>"Python"</S>, <S>"C"</S>, <S>"C++"</S>, <S>"TypeScript"</S>],
+              {"  "}<P>"experienceYears"</P>: <N>{profile.years}</N>,
             </Line>
             <Line n={5}>
-              {"  "}<P>cares</P>: [<S>"architecture"</S>, <S>"p99"</S>, <S>"DX"</S>],
+              {"  "}<P>"speaks"</P>: [<S>"Python"</S>, <S>"C"</S>, <S>"C++"</S>, <S>"TypeScript"</S>],
             </Line>
             <Line n={6}>
-              {"  "}<P>learning</P>: <S>"ML / computer vision"</S>,
+              {"  "}<P>"cares"</P>: [<S>"architecture"</S>, <S>"p99"</S>, <S>"DX"</S>],
             </Line>
             <Line n={7}>
-              {"  "}<P>available</P>: <K>true</K>,
+              {"  "}<P>"learning"</P>: <S>"ML / computer vision"</S>,
             </Line>
-            <Line n={8}>{"}"};</Line>
+            <Line n={8}>
+              {"  "}<P>"available"</P>: <K>true</K>
+            </Line>
+            <Line n={9}>{"}"}</Line>
           </code>
         </pre>
       </figure>
@@ -88,8 +89,6 @@ function Line({ n, children }: { n: number; children: React.ReactNode }) {
 }
 
 const K = ({ children }: { children: React.ReactNode }) => <span className="tk-k">{children}</span>;
-const V = ({ children }: { children: React.ReactNode }) => <span className="tk-v">{children}</span>;
 const P = ({ children }: { children: React.ReactNode }) => <span className="tk-p">{children}</span>;
 const S = ({ children }: { children: React.ReactNode }) => <span className="tk-s">{children}</span>;
 const N = ({ children }: { children: React.ReactNode }) => <span className="tk-n">{children}</span>;
-const C = ({ children }: { children: React.ReactNode }) => <span className="tk-c">{children}</span>;

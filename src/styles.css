@@ -1073,11 +1073,11 @@ p {
     gap: 10px;
   }
   .code {
-    font-size: 12px;
+    font-size: 11.5px;
   }
   .ln {
-    width: 32px;
-    padding-right: 12px;
+    width: 28px;
+    padding-right: 10px;
   }
   .project-shot {
     padding: 16px;
