@@ -42,7 +42,7 @@ export function Hero() {
             <i />
             <i />
           </span>
-          <span className="code-file">dmitrii.ts</span>
+          <span className="code-file">dmitrii.json</span>
         </div>
         <pre className="code">
           <code>
@@ -56,7 +56,7 @@ export function Hero() {
               {"  "}<P>experience</P>: <N>{profile.years}</N>, <C>// years, roughly</C>
             </Line>
             <Line n={4}>
-              {"  "}<P>speaks</P>: [<S>"Python"</S>, <S>"C"</S>, <S>"TypeScript"</S>],
+              {"  "}<P>speaks</P>: [<S>"Python"</S>, <S>"C"</S>, <S>"C++"</S>, <S>"TypeScript"</S>],
             </Line>
             <Line n={5}>
               {"  "}<P>cares</P>: [<S>"architecture"</S>, <S>"p99"</S>, <S>"DX"</S>],

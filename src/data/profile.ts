@@ -25,8 +25,8 @@ export const profile = {
   focus: "computer vision · remote sensing",
 
   about: [
-    "Generalist by design: Python, C and TypeScript, from the database schema to the last pixel of the UI.",
-    "I'm most at home where architecture meets performance. The right index, a queue on SKIP LOCKED or a hot loop moved into C usually beats adopting yet another framework.",
+    "Generalist by design: Python, C, C++ and TypeScript, from the database schema to the last pixel of the UI.",
+    "I'm most at home where architecture meets performance. The right index, a queue on SKIP LOCKED or a hot loop rewritten in C++ usually beats adopting yet another framework.",
     "These days most of my time goes into ML, specifically how models see the planet from orbit and from a few hundred metres up.",
   ],
 
@@ -56,7 +56,7 @@ export const profile = {
   },
 
   stack: [
-    { label: "languages", items: ["Python", "C", "TypeScript", "SQL", "Bash"] },
+    { label: "languages", items: ["Python", "C", "C++", "TypeScript", "SQL", "Bash"] },
     { label: "backend", items: ["FastAPI", "asyncio", "Node.js", "PostgreSQL", "Redis", "SQLAlchemy", "WebSockets"] },
     { label: "frontend", items: ["React", "Vite", "Tailwind", "TanStack Query"] },
     { label: "infra", items: ["Docker", "Linux", "GitHub Actions", "Caddy", "Prometheus", "Grafana"] },
